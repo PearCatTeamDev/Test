@@ -24,14 +24,6 @@ local function EvonNotification(messages)
 		Duration = 5; -- how long the notification should in secounds
 	})
 end
-
--- Get Evon's Version
-warn("----------------------------------------------------------")
-print("Client Version: ".. arceus.getversion())
-print("Server Version: ".. EvonConfiguration.Version)
-print("Forced Update: ".. tostring(EvonConfiguration.Forced_Update))
-warn("----------------------------------------------------------")
-
 -- Check if the Evon GUI is on Latest Version
 if arceus.getversion() ~= EvonConfiguration.Version then
 	warn('Outdated Version, Game Kicked')
